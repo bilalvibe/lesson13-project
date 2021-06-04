@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/bg.png");
+}
+.hero-title{
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    padding: 24px 0;
+}
+.hero-title span{
+    color: #adff00;
+}
+.hero-desc{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+.hero-desc span{
+    font-weight: bold;
+}
+.header-link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+.header-link:not(:last-child) {
+    margin-right: 50px;
+}
+.header-link:hover{
+    color: #adff00;
+}
+.header-link:hover:before{
+    content: "";
+    height: 3px;
+    background: #adff00;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+}
+.row{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+.section-title{
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 77px;
+}
+.section-title:before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background: #adff00;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -10px;
+}
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background: #adff00;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -25px;
+}
+.team{
+    background: rgba(0,0,0,0.75) url("../images/bg2.png");
+    background-blend-mode: darken;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+.team-img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.6s;
+    border: 3px solid transparent;
+}
+.team-box:hover .team-img{
+    border: 3px solid #adff00;
+}
+.section-title span{
+    color: #adff00;
+}
+.team-position{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 13px;
+}
+.team-info{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+}
+.team-caption{
+    font-weight: 600;
+    font-size: 20px;
+}
+.services{
+    text-align: center;
+    padding: 82px 0 92px;
+}
+.services-desc{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 95px;
+}
+.services-icon{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.icon-title{
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 26px 0 15px;
+}
+.icon-desc{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+.services-box:hover .services-icon {
+    background: #adff00;
+    transition: .6s;
+}
+.services-box:hover .services-icon path{
+    fill: #fff;
+}
+.contacts{
+    padding: 43px 0 72px;
+    background: #090909;
+    position: relative;
+}
+.contacts-title{
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 55px;
+}
+.contacts-title span{
+    color: #adff00;
+}
+.contacts-form{
+    width: 476px;
+    margin: 0 auto;
+}
+.contacts-upper-form{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-upper-form input{
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    width: 178px;
+}
+.contacts-email{
+    width: 476px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #D5D6D8;
+    margin: 54px 0;
+}
+.contacts-btn{
+    font-weight: 500;
+    line-height: 19px;
+    color: #d5d6d8;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 8px 59px;
+    background: transparent;
+}
+.contacts svg{
+    position: absolute;
+    top: -40px;
+    right: 133px;
+}
+.contacts-form ::placeholder{
+    color: #d5d6d8;
+}
+
+
+
